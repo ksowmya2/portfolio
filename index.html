@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinthali Sowmya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+  :root {
+    --second-bg-color: #323946;
+    --text-color: #f5f5f5;
+    --accent-color: #007acc;
+  }
+
+  /* Carousel Wrapper */
+  .cert-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Carousel Navigation Buttons */
+  .carousel-nav {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .carousel-nav:hover {
+    background-color: #0057a1;
+  }
+
+  /* Carousel Content */
+  .cert-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cert-item {
+    display: none;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+  }
+
+  .cert-item h2, .cert-item h3 {
+    margin: 0.5rem 0;
+  }
+
+  /* Certificate Image */
+  .cert-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 2px solid #444;
+  }
+
+  /* Verify Link */
+  .verify-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .verify-link:hover {
+    color: #0057a1;
+  }
+</style>
+ 
+</head>
+<body>
+  <!-- navbar -->
+  <header class="header">
+      <a class="logo" href="#">KS<span>.</span></a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home"   style="--i:1;" >Home</a>
+        <a href="#education" style="--i:2;">About Me</a>
+        <a href="#home" style="--i:3;">Skills</a>
+        <a href="#home" style="--i:4;">Projects</a>
+        <a href="#contact"style="--i:5;">Contact</a>
+      </nav>
+      
+      <div class="resume-btn">
+        <button id="resume-toggle">Resume ▼</button> <!-- Dropdown toggle button -->
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="images/KINTHALI SOWMYA -RESUME.pdf" target="_blank">View</a>
+          <a href="images/KINTHALI SOWMYA -RESUME.pdf"  download target="_blank" class="download-btn" title="Download Resume"><i class="fa-solid fa-download"></i> Download</a>
+        </div>
+      </div>
+      
+
+
+           
+        
+      
+  </header>
+
+  <!-- home -->
+   <section class="home" id="home">
+    <!-- background video
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="images/sow name video.mp4"  type="video/mp4">
+      Your browser does not support the video tag.
+  </video> -->
+            <div class="home-content">
+              <h3>Hello</h3>
+              <h1>
+                I'M Kinthali Sowmya
+              </h1>
+                <h3>
+                   <span class="multiple-text"></span>
+                </h3>
+                <p>
+                  I’m passionate about blending creativity and technology, and I’m excited to start my journey as a UI/UX Designer and Frontend Developer. With a focus on designing intuitive, user-friendly interfaces and developing seamless web experiences, I aim to bring ideas to life in a way that captivates users and enhances their digital journey.
+                </p>
+
+                <div class="social-media">
+                      <a href="#" style="--i:7;"><i class='bx bxl-linkedin'></i></a>
+                      <a href="#" style="--i:8;"><i class='bx bxl-github'></i></a>
+                </div>
+                <a href="#" class="btn">Explore</a>
+            </div>
+            <div class="home-img">
+               <img src="images/sowmya2.jpg" alt="profileimg" style="border-radius: 50%;">
+            </div>
+   </section>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="script.js"></script>
+   
+
+
+
+<!-- education -->
+<section class="services" id="education">
+<h2 class="heading-edu">
+   <span style="text-align: center; font-size: 7rem;">Education</span>
+</h2>
+<div class="services-container">
+ <div class="services-box">
+  <h3> <i class="fa-solid fa-graduation-cap"></i> &nbsp;&nbsp;B.Tech</h3>
+  <h2 style="margin-top: 3rem;"> GMR Institute of Technology</h2>
+  <h2>
+    Information Technology
+  </h2>
+  <h2>2020-2024</h2>
+ </div>
+ <div class="services-box">
+  <h3><i class="fa-solid fa-book-open"></i> &nbsp;&nbsp;Intermediate</h3>
+  <h2 style="margin-top: 3rem;">Sri Chaitanya Junior College</h2>
+  <h2>MPC</h2>
+  <h2>2018-2020</h2>
+</div>
+
+<!-- School Section -->
+<div class="services-box">
+  <h3><i class="fa-solid fa-chalkboard"></i> &nbsp;&nbsp;Secondary School</h3>
+  <h2 style="margin-top: 3rem;">Siddhartha Public School</h2>
+  <h2>General Studies</h2>
+  <h2>2017-2018</h2>
+</div>
+</div>
+
+
+<!-- certificates -->
+<!-- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class="carousel-item-content">
+              <img src="images/Screenshot (161).png" class="carousel-image" alt="Tech" onclick="openModal(this)" style="height: 300px; width: 300px;">
+              <p class="certificate">"I am certified as a UI/UX Developer and Designer from Tech Mahindra SMART Academy, Visakhapatnam."</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class="carousel-item-content">
+              <img src="images/Screenshot (161).png" class="carousel-image" alt="Coursera" onclick="openModal(this)" style="height: 300px; width: 300px;">
+              <p class="certificate">"I completed the Google IT Support course on the Coursera platform."</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <div class="carousel-item-content">
+              <img src="images/Screenshot (162).png" class="carousel-image" alt="AWS" onclick="openModal(this)" style="height: 300px; width: 300px;">
+              <p class="certificate">"I completed the Cloud Foundation course on the AWS platform."</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-content">
+            <img src="images/Screenshot (163).png" class="carousel-image" alt="AWS" onclick="openModal(this)" style="height: 300px; width: 300px;">
+            <p class="certificate">"I completed the Cloud Foundation course on the AWS platform."</p>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+
+
+<!-- internship -->
+ <section class="internship">
+  <h2 class="intern-heading"><span style="font-size: 6rem;">Internship</span></h2>
+ 
+ <div class="intern">
+  
+ <div class="intern-img">
+     <img src="images/Screenshot (164).png" alt="intern" style="height: 450px;width: 380px; border-radius: 20px;">
+ </div>
+ <div class="intern-content">
+          <h2>
+            KRIFY SOTWARE TECHNOLOGIES PRIVATE LIMITED,KAKINADA.
+          </h2>
+          <p>
+            Completed a web development internship using HTML, CSS, Bootstrap and SQL while also learning the
+fundamentals of cybersecurity. developed a research on secure communication that improved data security
+and encryption methods for secure message exchanges by combining quantum key distribution with
+traditional cryptography. successfully used both web and security techniques.
+          </p>
+ </div>
+ </div>
+</section>
+
+</section>
+
+<!-- skills -->
+ <section style="background-color: #1f242d;">
+  <div class="program">
+        <div>
+          <img src="images/java bc r.png" alt="">
+         <h2>JAVA</h2>
+        </div> 
+         <div>
+          <img src="" alt="">
+         <h2>Python</h2>
+         </div>
+  </div>
+  <div class="develop">
+    <div>
+      <img src="" alt="">
+     <h2>HTML</h2>
+    </div> 
+     <div>
+      <img src="" alt="">
+     <h2>CSS</h2>
+     </div>
+
+     <div>
+      <img src="" alt="">
+     <h2>Javascript</h2>
+    </div> 
+     <div>
+      <img src="" alt="">
+     <h2>ReactJS</h2>
+     </div>
+  </div>
+  <div class="design">
+
+  </div>
+  <div class="soft">
+       
+  </div>
+ </section>
+<!-- contact -->
+<section class="contact" id="contact" style=" font-family: 'Arial', sans-serif;
+background-color:#1f242d;
+color: #333;">
+  <div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div class="container mx-auto">
+      <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-lg dark:bg-[#1f242d] dark:text-white">
+        <div class="text-center">
+          <h1 class="heading5 my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200" style="text-align: center; font-size: 50px;color: #f5f5f5;margin-bottom: 50px;">Contact<span> Me!</span> </h1>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" >
+            <input type="hidden" name="access_key" value="3a9bcb9b-f68a-418b-b089-f011fcca5884" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2 input-box" style="text-align: center;margin-bottom: 10px;">
+                
+                <input type="text" name="name" id="first_name" placeholder="First Name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-[#323946] dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" style="background-color: #323946; padding: 10px 20px; border-radius: 10px; margin-right:12px;width: 250px; " />
+          
+                <input type="text" name="last_name" id="lname" placeholder="Last Name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-[#323946] dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" style="background-color: #323946; padding: 10px 20px; border-radius: 10px; margin-top: 10px; margin-left: 10px;width: 250px;"  />
+              </div>
+            </div>
+
+            <div class="flex mb-6 space-x-4" >
+              <div class="w-full md:w-1/2 input-box" style="text-align: center; margin-bottom: 10px;">
+                <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-[#323946] dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"  style="background-color: #323946; padding: 10px 20px; border-radius: 10px; margin-top: 10px; margin-right: 20px;width: 250px;"   />
+           
+                
+                <input type="text" name="phone" id="phone" placeholder="Phone Number" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-[#323946] dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" style="background-color: #323946; padding: 10px 20px; border-radius: 10px; margin-top: 10px;width: 250px;" />
+              </div>
+            </div>
+
+            <div class="mb-6 input-box" style="text-align: center;">
+              <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-[#323946] dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"  style="background-color: #323946; padding: 10px 20px; border-radius: 10px; margin-top: 10px; width: 520px; " required></textarea>
+            </div>
+
+            <div class="mb-6 submit" style="text-align: center;">
+              <button type="submit" class="submit-button w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none hover:bg-indigo-600 transition duration-200" style="padding: 10px 20px 10px 20px; border-radius: 20px;margin-top: 20px;background-color: #0ef;">
+    <h style="color: #323946;">Send Message</h>
+              </button>
+            </div>
+
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer design -->
+ <footer class="footer">
+  <div class="footer-text">
+      <p>  &copy; 2024 Sowmya's Portfolio.
+      </p>
+  </div>
+
+  <div class="footer-iconTop">
+         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+ </footer>
+
+</body>
+</html>
